@@ -1,0 +1,66 @@
+Dan DeLion
+D
+1
+Ann Arbor
+Q
+2
+Jim Dandy
+K
+1
+May Flowers
+s
+3
+Wade Waters
+d
+2
+Sue St. Marie
+q
+2
+Armand Foote
+k
+3
+Lee King
+x
+1
+Scott Free
+D
+4
+Sandy Bacon
+Q
+4
+Horace Cope
+K
+2
+Myrtle Beech
+Q
+1
+Tip Dover
+s
+1
+Holly Bush
+t
+2
+Mitch Egan
+K
+5
+Rhoda Carr
+Q
+1
+Jay Walker
+k
+2
+April Raines
+d
+1
+Rich Mann
+D
+2
+Tanya Hyde
+b
+3
+Jim Shoe
+K
+1
+Pearl E Gates
+Q
+14
