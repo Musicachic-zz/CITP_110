@@ -1,7 +1,7 @@
 #=====================================================================
 # Program:      Homework Assignment #8
 # Programmer:   Teresa Potts
-# Date:         April 3, 2013
+# Date:         April 8, 2013
 # Abstract:     This program creates a list containing names. The list of names 
 #               will be printed, sorted, and printed again with the new sort order.
 #               Then it is written to a new outfile file and then searched. 
@@ -9,6 +9,7 @@
 
 # Define the main function.
 def main():
+    again = 'y'
     Names = input_names()
     print("Unsorted Names are as follows:")
     print("______________________________")
@@ -23,7 +24,11 @@ def main():
     print()
     output_names(Names)
     print("File newnames.txt has been created.")
-    search_names(Names)
+    while again == 'Y' or again == 'y':
+        search_names(Names)
+        again = input("Would you like to search for another name? Enter y: ")
+    else:
+        print("Ending the program")
 
 def input_names():
 # Open a file for reading.
@@ -66,12 +71,6 @@ def search_names(Names):
         print("It is located at position", Names.index(search)+1)
     else:
         print(search, "was not found in the list.")
-#    for name in Names:
-#        if search in name:
-#        print(search, "was found in the list.")
-#        print("It is located at position", Names.index(search_names))
-#        else:
-#        print(search, "was not found in the list.")
 
 # Call the main function.
 main()
