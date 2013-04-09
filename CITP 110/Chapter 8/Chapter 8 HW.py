@@ -38,7 +38,7 @@ def main():
         # Call the search_names function.
         search_names(Names)
         # Get input from the user whether to do another search.
-        again = input("Would you like to search for another name? Enter y: ")
+        again = input("Would you like to search for another name? Enter Y for Yes: ")
     # If the user does not want to continue show the user the program is ending.
     else:
         print("Ending the program")
