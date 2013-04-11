@@ -21,11 +21,9 @@ def make_list():
     print('Enter data for five pets.')
     for count in range(1, 6):
         # Get the pet's data.
-        #print('Phone number ' + str(count) + ':')
         name = input("Enter the pet's name: ")
         animal_type = input('Enter the type of animal: ')
         age = float(input("Enter the pet's age: "))
-        print
 
         # Create a new Pet object in memory and
         # assign it to the pet variable.
