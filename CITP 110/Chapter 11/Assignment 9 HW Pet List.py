@@ -1,6 +1,7 @@
 import Pet
 
 def main():
+    again = "Y"
     # Get a list of Pet objects.
     pets = make_list()
 
