@@ -34,7 +34,7 @@ def main():
     # Show the user that the new file has been created.
     print("File newnames.txt has been created.")
     # Use a while loop to control whether or not to oo another search.
-    while again == 'Y' or again == 'y':
+    while again.upper() == 'Y':
         # Call the search_names function.
         partial_search(Names)
         # Get input from the user whether to do another search.
@@ -90,14 +90,12 @@ def output_names(Names):
 
 # Define the partial_names function.
 def partial_search(Names):
-
     search = input("Enter a name or partial name:")
-    isFound=False
+    isFound = False
 
     for name in Names:
         if search.upper() in name.upper():
-
-            isFound=True
+            isFound = True
             print(search, "was found within the list as", name)
 
     if not isFound:

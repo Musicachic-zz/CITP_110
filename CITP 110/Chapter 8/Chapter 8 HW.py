@@ -34,7 +34,7 @@ def main():
     # Show the user that the new file has been created.
     print("File newnames.txt has been created.")
     # Use a while loop to control whether or not to oo another search.
-    while again == 'Y' or again == 'y':
+    while again.upper() == 'Y':
         # Call the search_names function.
         search_names(Names)
         # Get input from the user whether to do another search.
@@ -85,12 +85,11 @@ def output_names(Names):
     # Create a for loop for reading each name and adding a line break after each one.
     for name in Names:
         outfile.writelines(name + "\n")
-    # Close the file.
+        # Close the file.
     outfile.close()
 
 # Define the search_names function.
 def search_names(Names):
-
     # Assign the input from the user to be named search.
     search = input("Enter a name:")
     # Conditional statement if the input from the user is found in the file.
@@ -98,7 +97,7 @@ def search_names(Names):
         # Display to the user that the name was found.
         print(search, "was found in the list.")
         # Display the location of the name in the index.
-        print("It is located at position", Names.index(search)+1)
+        print("It is located at position", Names.index(search) + 1)
     # If the name is not found, display it is not found on the list.
     else:
         print(search, "was not found in the list.")
