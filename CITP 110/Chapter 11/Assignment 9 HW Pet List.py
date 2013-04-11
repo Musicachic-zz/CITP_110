@@ -22,8 +22,18 @@ def make_list():
     for count in range(1, 6):
         # Get the pet's data.
         name = input("Enter the pet's name: ")
+        while name == '':
+            print("Error: Please enter the pet's name.")
+            name = input("Enter the pet's name: ")
         animal_type = input('Enter the type of animal: ')
-        age = float(input("Enter the pet's age: "))
+        while animal_type == '':
+            print("Error: Please enter the animal type.")
+            animal_type = input('Enter the type of animal: ')
+        age = input("Enter the pet's age: ")
+        while age == '':
+            print("Error: Please enter the age.")
+            age = input("Enter the pet's age: ")
+        float(age)
 
         # Create a new Pet object in memory and
         # assign it to the pet variable.
