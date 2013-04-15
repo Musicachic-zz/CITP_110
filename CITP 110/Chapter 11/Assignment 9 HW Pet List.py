@@ -31,7 +31,7 @@ def make_list():
             print("Error: Please enter the animal type.")
             animal_type = input('Enter the type of animal: ')
         age = input("Enter the pet's age: ")
-        while age == '':
+        while age == '' or age.isalpha():
             print("Error: Please enter the age.")
             age = input("Enter the pet's age: ")
         float(age)
