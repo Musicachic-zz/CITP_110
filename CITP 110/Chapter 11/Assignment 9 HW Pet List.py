@@ -1,3 +1,12 @@
+#=====================================================================
+# Program:      Homework Assignment #8
+# Programmer:   Teresa Potts
+# Date:         April 15, 2013
+# Abstract:     This program uses a pet class to help a user create a
+#               list of pets. It asks for the pet's name, type, and
+#               age. It then prints out the pets entered to the user.
+#=====================================================================
+
 import Pet
 
 def main():
