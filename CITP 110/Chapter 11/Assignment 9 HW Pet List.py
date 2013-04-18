@@ -1,5 +1,5 @@
 #=====================================================================
-# Program:      Homework Assignment #8
+# Program:      Homework Assignment #9
 # Programmer:   Teresa Potts
 # Date:         April 15, 2013
 # Abstract:     This program uses a pet class to help a user create a
