@@ -35,13 +35,24 @@ class Person:
 class Customer(Person):
 
     def __init__(self, name, address, phone_num, cust_id):
-        Customer.__init__(self, name, address, phone_num)
+        Person.__init__(self, name, address, phone_num)
 
         self.__cust_id = cust_id
+
+    def set_cust_id(self, cust_id):
+        self.__cust_id = cust_id
+
+    def get_cust_id(self):
+        return self.__cust_id
 
 class Vendor(Person):
 
     def __init__(self, name, address, phone_num, vendor_id):
-        Vendor.__init__(self, name, address, phone_num, vendor_id)
+        Person.__init__(self, name, address, phone_num, vendor_id)
 
         self.__vendor_id = vendor_id
+    def set_vendor_id(self, vendor_id):
+        self.__vendor_id = vendor_id
+
+    def get_vendor_id(self):
+        return self.__vendor_id
