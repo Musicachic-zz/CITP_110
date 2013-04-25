@@ -63,8 +63,8 @@ def pet_list(pet_list):
     for item in pet_list:
         print(item.get_name())
         print(item.get_animal_type())
-        print(item.get_age())
-        print()
+        print(item.get_age(),'\n')
+
 
 # Call the main function.
 main()

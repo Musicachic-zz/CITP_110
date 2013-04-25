@@ -2,9 +2,7 @@
 # Program:      Homework Assignment #10
 # Programmer:   Teresa Potts
 # Date:         April 24,2013
-# Abstract:     This program uses a pet class to help a user create a
-#               list of pets. It asks for the pet's name, type, and
-#               age. It then prints out the pets entered to the user.
+# Abstract:
 #=====================================================================
 
 class Person:
@@ -48,7 +46,7 @@ class Customer(Person):
 class Vendor(Person):
 
     def __init__(self, name, address, phone_num, vendor_id):
-        Person.__init__(self, name, address, phone_num, vendor_id)
+        Person.__init__(self, name, address, phone_num)
 
         self.__vendor_id = vendor_id
     def set_vendor_id(self, vendor_id):
