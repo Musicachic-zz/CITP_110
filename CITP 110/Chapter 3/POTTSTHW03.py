@@ -17,8 +17,8 @@ def main():
     display_message()
     name = input("What is your first name? ")
     sales_amount = float(input("What is your amount of total sales this week? "))
-    hours_worked = float(input("What are your number of hours worked this week? "))
-    print() # I added space for a extra line here because I felt like it looked nicer 
+    hours_worked = float(input("What are your number of hours worked this week? ", '\n'))
+    print() # I added space for a extra line here because I felt like it looked nicer
     # for the user.
     hourly_pay_amt = hourly_pay_total(hours_worked, HOURLY_PAY_RATE)
     commission_amt = commission_total(sales_amount, COMMISSION_RATE)
@@ -33,9 +33,8 @@ def main():
 def display_message():
     print("This program calculates the salesperson's pay.")
     print("Five values are displayed:")
-    print("Hourly Pay, Commission, Gross Pay, Withholding, and Net Pay")
-    print()
-    
+    print("Hourly Pay, Commission, Gross Pay, Withholding, and Net Pay", "\n")
+
 # This function will calculate the saleperson's hourly pay for the week.
 def hourly_pay_total(hours_worked, HOURLY_PAY_RATE):
     result = hours_worked * HOURLY_PAY_RATE

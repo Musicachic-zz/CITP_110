@@ -27,7 +27,7 @@ def main():
     print("Name:", peep.get_name())
     print("Address:", peep.get_address())
     print("Phone Number:", peep.get_phone_num())
-    print("Customer ID:", peep.get_vendor_id())
+    print("Vendor ID:", peep.get_vendor_id())
 
 main()
 
