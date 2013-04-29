@@ -1,8 +1,9 @@
 #=====================================================================
 # Program:      Homework Assignment #10
 # Programmer:   Teresa Potts
-# Date:         April 24,2013
-# Abstract:
+# Date:         April 29,2013
+# Abstract:     This is the person class. It holds information about
+#               a person whether they be a customer or a vendor.
 #=====================================================================
 
 class Person:

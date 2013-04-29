@@ -1,8 +1,10 @@
 #=====================================================================
 # Program:      Homework Assignment #10
 # Programmer:   Teresa Potts
-# Date:         April 24,2013
-# Abstract:
+# Date:         April 29,2013
+# Abstract:     This program uses the person class to display
+#               hardcoded information about a person whether they be
+#               customer or vendor.
 #=====================================================================
 
 import person
