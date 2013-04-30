@@ -17,7 +17,7 @@ def main():
     print("Address:", peep.get_address())
     print("Phone Number:", peep.get_phone_num(),'\n')
 
-    peep = person.Customer('Teresa Potts','1206 Mary Ave Grand Ledge, MI 60126','517-123-4564', 1221)
+    peep = person.Customer('Teresa M. Potts','1206 Mary Ave Grand Ledge, MI 60126','517-123-4564', 1221)
 
     print("Name:", peep.get_name())
     print("Address:", peep.get_address())
