@@ -57,14 +57,14 @@ class MpgCalculatorGUI:
     def mpg(self):
         # Get the value entered by the user into the
         # capacity_entry widget.
-        self.capacity = float(self.capacity_entry.get())
-        self.miles = float(self.miles_entry.get())
+        capacity = float(self.capacity_entry.get())
+        miles = float(self.miles_entry.get())
 
         # Calculate the MPG.
-        self.mpg = self.miles/self.capacity
+        mpg = miles/capacity
 
         # Display the results in an info dialog box.
-        tkinter.messagebox.showinfo("Your MPG is:", self.mpg)
+        tkinter.messagebox.showinfo("Your MPG is:", mpg)
 
 # Create an instance of the mpgcalculatorGUI class.
 mpg_calc = MpgCalculatorGUI()
