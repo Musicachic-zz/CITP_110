@@ -63,7 +63,7 @@ class MpgCalculatorGUI:
         # Calculate the MPG.
         mpg = miles/capacity
 
-        self.message = 'Your MPG is:', mpg
+        self.message = 'Your MPG is: ' + str(mpg)
 
         # Display the results in an info dialog box.
         tkinter.messagebox.showinfo("Calculation", self.message)
