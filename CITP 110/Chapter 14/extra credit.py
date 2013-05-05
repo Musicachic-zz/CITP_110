@@ -4,7 +4,7 @@
 # Date:         May 5,2013
 # Abstract:     This program calculates your estimated miles per gallon
 #              (MPG) based on your gas tank size and how far you can go
-#              on one tank of gas.
+#               on one tank of gas.
 #=====================================================================
 
 import tkinter
