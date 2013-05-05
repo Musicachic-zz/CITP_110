@@ -1,9 +1,10 @@
 #=====================================================================
 # Program:      Homework Assignment for Extra Credit
 # Programmer:   Teresa Potts
-# Date:         May 1,2013
+# Date:         May 5,2013
 # Abstract:     This program calculates your estimated miles per gallon
-#              (MPG) based on your gas tank size and how far you will go.
+#              (MPG) based on your gas tank size and how far you can go
+#              on one tank of gas.
 #=====================================================================
 
 import tkinter
