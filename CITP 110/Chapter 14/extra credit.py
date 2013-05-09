@@ -63,7 +63,8 @@ class MpgCalculatorGUI:
             miles = float(self.miles_entry.get())
 
         except ValueError:
-            print("Please enter a number value for tank capacity and/or miles.")
+            self.message = "Please enter a number value for tank capacity and/or miles."
+            tkinter.messagebox.showinfo("Error", self.message)
             return False
 
         # Calculate the MPG.
