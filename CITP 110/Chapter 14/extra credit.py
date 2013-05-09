@@ -58,8 +58,13 @@ class MpgCalculatorGUI:
     def mpg(self):
         # Get the value entered by the user into the
         # capacity_entry widget.
-        capacity = float(self.capacity_entry.get())
-        miles = float(self.miles_entry.get())
+        try:
+            capacity = float(self.capacity_entry.get())
+            miles = float(self.miles_entry.get())
+
+        except ValueError:
+            print("Please enter a number value for tank capacity and/or miles.")
+            return False
 
         # Calculate the MPG.
         mpg = miles/capacity
