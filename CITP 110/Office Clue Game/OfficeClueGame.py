@@ -2,12 +2,12 @@
 # Program:      Office Clue Game
 # Programmer:   Teresa Potts
 # Date:         June 27, 2013
-# Abstract:
 #=====================================================================
+
 import random
 
 def main():
-    again = 'y'
+    print("This is a office clue game.")
     People = find_people()
     print_people(People)
     Weapons = find_weapons()
@@ -20,8 +20,7 @@ def main():
     Computer_Weapon_Choice = get_computers_choice_weapons(Num_Weapons)
     Num_Room = number_room(Room)
     Computer_Room_Choice = get_computers_choice_room(Num_Room)
-    Players_Choice_Person = players_choice_people(People,Num_People)
-    Meanie = determine_the_meanie(People,Num_People,Computer_Person_Choice, Players_Choice_Person)
+    Meanie = determine_the_meanie(People,Num_People,Computer_Person_Choice)
 
 
 
@@ -125,10 +124,11 @@ def get_computers_choice_room(Num_Room):
 
 def players_choice_people(People,Num_People):
     x = int(Num_People)
+
     choice = int(input("Enter a person you think got pwned "))
     if choice < 0 or choice >= x:
         print("Error: Please input a integer between 0 and", Num_People-1)
-        players_choice_people(People,Num_People)
+        return players_choice_people(People,Num_People)
     else:
         print(People[choice])
         return choice
@@ -154,11 +154,17 @@ def player_choice_room(Room,Num_Room):
     else:
         print(Room[choice])
 
-def determine_the_meanie(People,Num_People,Computer_Person_Choice, Players_Choice_Person):
-    if Computer_Person_Choice == Players_Choice_Person:
-        print(People[Players_Choice_Person], "totally did it. Now what did they do it with?")
-    else:
-        print(People[Players_Choice_Person], "didn't do it. Keep guessing.")
+def determine_the_meanie(People,Num_People,Computer_Person_Choice):
+    while True:
+
+        Players_Choice_Person = players_choice_people(People,Num_People)
+        if Computer_Person_Choice == Players_Choice_Person:
+            print(People[Players_Choice_Person], "totally did it. Now what did they do it with?")
+            break
+        else:
+            print(People[Players_Choice_Person], "didn't do it. Keep guessing.")
+
+
 
 # Call the main function.
 main()
