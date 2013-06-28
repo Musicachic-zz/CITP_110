@@ -2,6 +2,12 @@
 # Program:      Office Clue Game
 # Programmer:   Teresa Potts
 # Date:         June 27, 2013
+# Abstract:     This office clue game is a funny way to see someone get
+#               bopped without actually doing the bopping. It uses a three
+#               external lists to generate the options of People, Weapons,
+#               and Rooms.
+#               Have fun and remember only you can prevent forest fires!
+#
 #=====================================================================
 
 import random
