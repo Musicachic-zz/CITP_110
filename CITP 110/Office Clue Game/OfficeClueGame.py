@@ -25,10 +25,6 @@ def main():
     Weapon_used = determine_the_weapon(People, Num_People, Computer_Person_Choice, Weapons,Num_Weapons,Computer_Weapon_Choice, Meanie)
     determine_the_room(People, Num_People, Computer_Person_Choice, Weapons,Num_Weapons, Computer_Weapon_Choice, Room,Num_Room,Computer_Room_Choice, Meanie,Weapon_used)
 
-
-
-
-
 def find_people():
     # Open files for reading.
     infile = open("People.txt", "r")
@@ -189,8 +185,6 @@ def determine_the_room(People, Num_People, Computer_Person_Choice, Weapons,Num_W
             break
         else:
             print(Room[Players_Choice_Room], "was not the room of the crime. Keep guessing.")
-
-
 
 # Call the main function.
 main()
