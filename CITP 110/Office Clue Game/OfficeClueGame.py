@@ -22,6 +22,8 @@ def main():
     Computer_Room_Choice = get_computers_choice_room(Num_Room)
     Meanie = determine_the_meanie(People,Num_People,Computer_Person_Choice)
 
+    Weapon_used = determine_the_weapon(People, Num_People, Computer_Person_Choice, Weapons,Num_Weapons,Computer_Weapon_Choice, Meanie)
+    determine_the_room(People, Num_People, Computer_Person_Choice, Weapons,Num_Weapons, Computer_Weapon_Choice, Room,Num_Room,Computer_Room_Choice, Meanie,Weapon_used)
 
 
 
@@ -109,17 +111,17 @@ def number_room(Room):
 
 def get_computers_choice_person(Num_People):
     x = Num_People
-    computer_choice = random.randint(0,x)
+    computer_choice = random.randint(0,x-1)
     return computer_choice
 
 def get_computers_choice_weapons(Num_Weapons):
     x = Num_Weapons
-    computer_choice = random.randint(0,x)
+    computer_choice = random.randint(0,x-1)
     return computer_choice
 
 def get_computers_choice_room(Num_Room):
     x = Num_Room
-    computer_choice = random.randint(0,x)
+    computer_choice = random.randint(0,x-1)
     return computer_choice
 
 def players_choice_people(People,Num_People):
@@ -136,33 +138,57 @@ def players_choice_people(People,Num_People):
 
 def players_choice_weapon(Weapons,Num_Weapons):
     x = int(Num_Weapons)
-    choice = int(input("Enter a weapon you think pwned someone "))
+    choice = int(input("Enter a weapon you think was used to pwn someone "))
 
     if choice < 0 or choice >= x:
         print("Error: Please input a integer between 0 and", Num_Weapons-1)
-        players_choice_weapon(Weapons,Num_Weapons)
+        return players_choice_weapon(Weapons,Num_Weapons)
     else:
         print(Weapons[choice])
+        return choice
 
 def player_choice_room(Room,Num_Room):
     x = int(Num_Room)
-    choice = int(input("Enter a room you think somone got pwned in "))
+    choice = int(input("Enter a room you think someone got pwned in "))
 
     if choice < 0 or choice >=x:
         print("Error: Please input a integer between 0 and", Num_Room-1)
-        player_choice_room(Room,Num_Room)
+        return player_choice_room(Room,Num_Room)
     else:
         print(Room[choice])
+        return choice
 
 def determine_the_meanie(People,Num_People,Computer_Person_Choice):
     while True:
 
         Players_Choice_Person = players_choice_people(People,Num_People)
+        print(Computer_Person_Choice)
         if Computer_Person_Choice == Players_Choice_Person:
             print(People[Players_Choice_Person], "totally did it. Now what did they do it with?")
-            break
+            return People[Players_Choice_Person]
         else:
             print(People[Players_Choice_Person], "didn't do it. Keep guessing.")
+
+def determine_the_weapon(People, Num_People, Computer_Person_Choice, Weapons,Num_Weapons,Computer_Weapon_Choice, Meanie):
+    while True:
+
+        Players_Choice_Weapon = players_choice_weapon(Weapons,Num_Weapons)
+        if Computer_Weapon_Choice == Players_Choice_Weapon:
+            print(Weapons[Players_Choice_Weapon], "was totally used to bop", Meanie)
+            return Weapons[Players_Choice_Weapon]
+        else:
+            print(Weapons[Players_Choice_Weapon], "wasn't used to do bop", Meanie, "on the head. Keep guessing.")
+
+def determine_the_room(People, Num_People, Computer_Person_Choice, Weapons,Num_Weapons, Computer_Weapon_Choice, Room,Num_Room,Computer_Room_Choice, Meanie,Weapon_used):
+
+    while True:
+
+        Players_Choice_Room = player_choice_room(Room,Num_Room)
+        if Computer_Room_Choice == Players_Choice_Room:
+            print("Yes!", Meanie, "got bopped by", Weapon_used, "in the", Room[Players_Choice_Room])
+            break
+        else:
+            print(Room[Players_Choice_Room], "was not the room of the crime. Keep guessing.")
 
 
 

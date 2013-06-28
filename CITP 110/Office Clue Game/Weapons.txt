@@ -1,3 +1,12 @@
-Nerf Gun
-Little Tim
-Poo Smell
+1.	Nerf Gun
+2.	Little Tim
+3.	Poo Smell
+4.	Paper cut
+5.	Beer Bottle
+6.	Hypothermia
+7.	Heat Stroke
+8.	Lanyard
+9.	Bucky Balls
+10.	Punch in the face
+11.	Dry Erase Marker
+12.	Fall down the stairs
