@@ -174,24 +174,30 @@ def players_choice_people(People,Num_People):
 
 def players_choice_weapon(Weapons,Num_Weapons):
     x = int(Num_Weapons)
-    choice = int(input("Enter a weapon you think was used to pwn someone "))
-    if choice < 0 or choice > x or choice == "":
+    choice = input("Enter a weapon you think was used to pwn someone ")
+    try:
+        choice = abs(int(choice))
+        if choice <= x:
+            return choice
+        else:
+            raise ValueError
+    except:
         print("Error: Please input a integer between 0 and", Num_Weapons)
-        return players_choice_weapon(Weapons,Num_Weapons)
-    else:
-        #print(Weapons[choice])
-        return choice
+        return players_choice_weapon(Weapons, Num_Weapons)
 
 def player_choice_room(Room,Num_Room):
     x = int(Num_Room)
-    choice = int(input("Enter a room you think someone got pwned in "))
+    choice = input("Enter a room you think someone got pwned in ")
 
-    if choice < 0 or choice >x:
-        print("Error: Please input a integer between 0 and", Num_Room)
-        return player_choice_room(Room,Num_Room)
-    else:
-        #print(Room[choice])
-        return choice
+    try:
+        choice = abs(int(choice))
+        if choice <= x:
+            return choice
+        else:
+            raise ValueError
+    except:
+        print("Error: Please input a integer between 0 and", Num_Room-1)
+        return player_choice_room(Room, Num_Room)
 
 def determine_the_meanie(People,Num_People,Computer_Person_Choice):
     while True:
@@ -210,21 +216,22 @@ def determine_the_weapon(People, Num_People, Computer_Person_Choice, Weapons,Num
         Players_Choice_Weapon = players_choice_weapon(Weapons,Num_Weapons)
         weapon_name = Weapons[Players_Choice_Weapon].lstrip("0123456789. ")
         if Computer_Weapon_Choice == Players_Choice_Weapon:
-            print(weapon_name, "was totally used to bop", Meanie)
+            print(weapon_name,"was totally used to bop", Meanie)
             return weapon_name
         else:
-            print(weapon_name, "wasn't used to do bop", Meanie, "on the head. Keep guessing.")
+            print(weapon_name, "wasn't used to bop", Meanie, "on the head. Keep guessing.")
 
 def determine_the_room(People, Num_People, Computer_Person_Choice, Weapons,Num_Weapons, Computer_Weapon_Choice, Room,Num_Room,Computer_Room_Choice, Meanie,Weapon_used):
 
     while True:
 
         Players_Choice_Room = player_choice_room(Room,Num_Room)
+        room_name = Room[Players_Choice_Room].lstrip("0123456789. ")
         if Computer_Room_Choice == Players_Choice_Room:
-            print("Yes!", Meanie, "got bopped by", Weapon_used, "in the", Room[Players_Choice_Room])
+            print("Yes!", Meanie, "got bopped by", Weapon_used, "in the", room_name)
             break
         else:
-            print(Room[Players_Choice_Room], "was not the room of the crime. Keep guessing.")
+            print(room_name, "was not the room of the crime. Keep guessing.")
 
 # Call the main function.
 main()
