@@ -1,9 +1,9 @@
-0.  Emily Darin
-1.	Teresa Potts
-2.	Eric Mulcahy
-3.	Eric Simon
-4.	Timothy Belcher
-5.	Dan Van Valin
-6.	Akbar Chowdhury
-7.	Jay Davis
-8.	Dan Kolakowski
+0. Emily Darin
+1. Teresa Potts
+2. Eric Mulcahy
+3. Eric Simon
+4. Timothy Belcher
+5. Dan Van Valin
+6. Akbar Chowdhury
+7. Jay Davis
+8. Dan Kolakowski

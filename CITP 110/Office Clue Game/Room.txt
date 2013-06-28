@@ -1,13 +1,13 @@
-0.	Hoosier Room
-1.	Gopher Room
-2.	Bronco Room
-3.	Buckeye Room
-4.	Badger Room
-5.	Wolverine Room
-6.	Dev Workroom
-7.	Board Room
-8.	Boilermaker Room
-9.	Chippewa Room
+0. Hoosier Room
+1. Gopher Room
+2. Bronco Room
+3. Buckeye Room
+4. Badger Room
+5. Wolverine Room
+6. Dev Workroom
+7. Board Room
+8. Boilermaker Room
+9. Chippewa Room
 10.	Spartan Room
 11.	Vandal Room
 12.	3rd Floor Break Room
