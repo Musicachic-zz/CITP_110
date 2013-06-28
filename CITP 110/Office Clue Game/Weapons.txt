@@ -1,13 +1,12 @@
-1.	Nerf Gun
-2.	Little Tim
-3.	Poo Smell
-4.	Paper cut
-5.	Beer Bottle
-6.	Hypothermia
-7.	Heat Stroke
-8.	Lanyard
-9.	Bucky Balls
-10.	Punch in the face
-11.	Dry Erase Marker
-12.	Fall down the stairs
-13. Connies bowl
+0.	Nerf Gun
+1.	Little Tim
+2.	Poo Smell
+3.	Paper cut
+4.	Beer Bottle
+5.	Hypothermia
+6.	Heat Stroke
+7.	Lanyard
+8.	Bucky Balls
+9.	Punch in the face
+10.	Dry Erase Marker
+11.	Fall down the stairs

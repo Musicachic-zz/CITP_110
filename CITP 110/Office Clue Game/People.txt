@@ -1,72 +1,9 @@
-1.	Emily Darin
-2.	Teresa Potts
-3.	Eric Mulcahy
-4.	Eric Simon
-5.	Timothy Belcher
-6.	Dan Van Valin
-7.	Akbar Chowdhury
-8.	Jay Davis
-9.	Dan Kolakowski
-10.	Chris Gillespie
-11.	Erik Gillespie
-12.	Kristen Tavelli
-13.	Sam Berry
-14.	Scott Gillahan
-15.	Dan Grabowski
-16.	Brad Handy
-17.	Ramesh Kolisetty
-18.	Rich McLaughlin
-19.	Saul Rodriguez
-20.	Ashleigh New
-21.	Brendon Thiede
-22.	Todd VanHouten
-23.	Ben Stroud
-24.	Connie Wei
-25.	Jake Robb
-26.	Eric York
-27.	Deb Groetsch
-28.	Andy Bredin
-29.	Trinidad Esparza
-30.	Stephen FC
-31.	Eric Dostie
-32.	Dave Deacon
-33.	Steve Krohn
-34.	Patrick Masi
-35.	Ryan Hunt
-36.	Brian Spalding
-37.	Meagan Brandt
-38.	Mike Connick
-39.	Mike Shortt
-40.	Allen Baerman
-41.	Samson Chu
-42.	Brandon Hendryx
-43.	Eddie Jaquith
-44.	Alexis Jarvis
-45.	Zach Lark
-46.	Brenda Leung
-47.	Gordon Leung
-48.	Ryan Miller
-49.	Chris Monosmith
-50.	William Rogers-Snodgrass
-51.	Stephen Schroeder
-52.	Andrew Sundheimer
-53.	Zack Yao
-54.	Adam York
-55.	Amber Murphy
-56.	Meredith Blitx
-57.	Destavioun Carr
-58.	Josh Zook
-59.	Jon Bedard
-60.	Taylor Marshall
-61.	Angela Mireau
-62.	Aaron Myers
-63.	Liam Day
-64.	David Billings
-65.	Brian Bevins
-66.	Robin Peters
-67.	Larry Ingram
-
-
-
-
-
+0.  Emily Darin
+1.	Teresa Potts
+2.	Eric Mulcahy
+3.	Eric Simon
+4.	Timothy Belcher
+5.	Dan Van Valin
+6.	Akbar Chowdhury
+7.	Jay Davis
+8.	Dan Kolakowski
